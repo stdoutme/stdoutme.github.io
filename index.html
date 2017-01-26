@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css">
     <!-- <link rel="stylesheet" href="css/main.css"> -->
     <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -31,5 +33,18 @@
     <!-- Add your site or application content here -->
     <h1>stdout.me</h1>
     <p>Hello, World!</p>
+    
+    <button
+      class="g-recaptcha"
+      data-sitekey="6LftPBMUAAAAAM18eskP5s1nC4Z7vGXFLcnX7Yn9"
+      data-callback="YourOnSubmitFn">
+      Hello!
+    </button>
+    
+    <script type="text/javascript">
+      function recaptchaCallback() {
+        console.log("Hello! reCAPTCHA!")
+      }
+    </script>
   </body>
 </html>
