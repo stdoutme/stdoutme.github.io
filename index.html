@@ -37,13 +37,14 @@
     <button
       class="g-recaptcha"
       data-sitekey="6LftPBMUAAAAAM18eskP5s1nC4Z7vGXFLcnX7Yn9"
-      data-callback="YourOnSubmitFn">
+      data-callback="recaptchaCallback">
       Hello!
     </button>
     
     <script type="text/javascript">
       function recaptchaCallback() {
         console.log("Hello! reCAPTCHA!")
+        console.log(arguments)
       }
     </script>
   </body>
